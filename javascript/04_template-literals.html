@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Template Literals</title>
+  </head>
+  <style>
+    ul {
+      color: red;
+    }
+  </style>
+
+  <body>
+
+    <div></div>
+    
+    <script>
+      const person = {
+        name: 'Maycon',
+        lastName: 'Alves'
+      }
+
+      const courses = ['Javascript', 'Java', 'Python', 'Ruby', 'Go']
+
+      const personData = `My name is ${person.name} and my lastname is ${person.lastName}`
+
+      console.log(personData)
+
+      const tagTemplate = `
+        <ul>
+          ${
+              courses.map(course => `<li>${course}</li>`).join(' ')
+            }
+        </ul>
+      `
+
+      const body = document.querySelector('div')
+      body.innerHTML = tagTemplate
+    </script>
+  </body>
+  
+</html>
