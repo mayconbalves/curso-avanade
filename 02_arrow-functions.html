@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrow functions</title>
+  </head>
+  <body>
+    <input class="input" type="text" />
+    <script>
+      const input = document.querySelector('.input')
+      input.addEventListener('change', function(event) {
+        console.log(this)
+      })
+    </script>
+  </body>
+</html>
