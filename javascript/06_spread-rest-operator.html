@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Default parameters</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5]
+
+      console.log([...numbers, 6, 7, 8])
+
+      const name = 'Maycon'
+
+      console.log(...name)
+
+      function sum(firstNumber, secondNumber) {
+        return firstNumber + secondNumber
+      }
+
+      const number = [1, 2]
+
+      console.log(sum(...number))
+
+
+      function multiply(...numbers) {
+        const arr = numbers.map(number => number * 2)
+        return arr
+      }
+
+      console.log(multiply(1, 2, 3, 4, 5))
+    </script>
+  </body>
+</html>
