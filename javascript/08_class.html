@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Class</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(name) {
+          this.name = name
+        }
+
+        hello() {
+          console.log(`Welcome ${this.name}`)
+        }
+      }
+
+      class Age extends Person {
+        constructor(name, age) {
+          super(name)
+          this.name = name
+          this.age = age
+        }
+
+        showAge() {
+          console.log(`Hello ${this.name} your age is: ${this.age}`)
+        }
+      }
+
+      const maycon = new Person('Maycon')
+      const mayconAge = new Age('Maycon', '30')
+    </script>
+  </body>
+</html>
+
