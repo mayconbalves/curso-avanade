@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [0, 1, 2, 3, 4, 5, 6]
+
+      const findNumber = numbers.find(number => number > 3)
+      console.log(findNumber)
+
+      const findIndexNumber = numbers.findIndex(number => number > 10)
+      // quando nao acha o valor retorna -1
+      console.log(findIndexNumber)
+
+      console.log(numbers)
+    </script>
+  </body>
+</html>
