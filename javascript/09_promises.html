@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Promises</title>
+  </head>
+  <body>
+    <script>
+      const repositorys = fetch('https://api.github.com/users/mayconbalves/repos?per_page=50')
+
+        repositorys
+          .then(resp => resp.json())
+          .then(response => console.log(response))
+          .catch(err => console.log(err))
+    </script>
+  </body>
+</html>
+
