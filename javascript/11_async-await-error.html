@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Async await Error</title>
+  </head>
+  <body>
+    <script>
+      async function getRepository() {
+        try {
+        const repositorys = await fetch('https://api.github.com/users/mayconbalves/repos?per_page=50')
+        const data = await repositorysss.json()
+        } catch (err) {
+          console.error('Ops', err)
+        }
+      }
+
+      getRepository()
+    </script>
+  </body>
+</html>
+
