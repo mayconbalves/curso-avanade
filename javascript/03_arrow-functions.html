@@ -15,7 +15,9 @@
           return `Primeiro numero: ${this.firstNumber} Segundo numero: ${this.secondNumber}`
         },
         callShowValues: function() {
-          console.log(this.showValues())
+          window.setTimeout(function() {
+            console.log(this.showValues())
+          }, 2000)
         }  
       }
 

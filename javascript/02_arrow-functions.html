@@ -5,10 +5,10 @@
     <title>Arrow functions</title>
   </head>
   <body>
-    <input class="input" type="text" />
+    <button class="btn" type="text">Click me</button>
     <script>
-      const input = document.querySelector('.input')
-      input.addEventListener('change', function(event) {
+      const btn = document.querySelector('.btn')
+      btn.addEventListener('click', function(event) {
         console.log(this)
       })
     </script>
