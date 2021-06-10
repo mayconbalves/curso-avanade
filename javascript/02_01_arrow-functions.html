@@ -6,7 +6,21 @@
   </head>
   <body>
     <script>
-      
+      function sum() {
+        console.log(this)
+      }
+      const person = {
+        name: "John",
+        walk: function() {
+          console.log(this)
+        },
+        walkAction: function() {
+          console.log(this.walk())
+        }
+      }
+
+      person.walkAction()
+      sum()
     </script>
   </body>
 </html>
