@@ -8,13 +8,14 @@
     <script>
       const numbers = [0, 1, 2, 3, 4, 5, 6]
 
-      const findNumber = numbers.find(number => number > 3)
+      const findNumber = numbers.find(number => number > 4)
       console.log(findNumber)
 
-      const findIndexNumber = numbers.findIndex(number => number > 10)
+      const findIndexNumber = numbers.findIndex(number => number > 3)
       console.log(findIndexNumber)
 
-      console.log(numbers)
+      const includeNumber = numbers.includes(3)
+      console.log(includeNumber)
     </script>
   </body>
 </html>

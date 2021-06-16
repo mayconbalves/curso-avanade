@@ -15,10 +15,12 @@
       console.log(...name)
 
       function sum(firstNumber, secondNumber) {
+        console.log(firstNumber)
+        console.log(secondNumber)
         return firstNumber + secondNumber
       }
 
-      const number = [1, 2]
+      const number = [2, 1]
 
       console.log(sum(...number))
 
@@ -28,7 +30,20 @@
         return arr
       }
 
-      console.log(multiply(1, 2, 3, 4, 5))
+      console.log(multiply(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+      const object1 = {
+        name: "object1",
+        lastName: 'asdasd'
+      };
+
+      const object2 = {
+        ...object1,
+        color: "red"
+      };
+      const joinObjects = {...object1, ...object2};
+
+      console.log("objects", joinObjects);
     </script>
   </body>
 </html>

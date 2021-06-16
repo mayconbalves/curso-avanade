@@ -6,13 +6,13 @@
   </head>
   <body>
     <script>
-      async function getRepository() {
-        const repositorys = await fetch('https://api.github.com/users/mayconbalves/repos?per_page=50')
-        const data = await repositorys.json()
-        console.log(data)
-      }
-
-      getRepository()
+      const repositorys = fetch('https://api.github.com/users/mayconbalves/repos?per_page=50')
+      let ret;
+        repositorys
+          .then(resp => resp.json())
+          .then(response => {ret = response; console.log("log 1", ret)})
+          .catch(err => console.log(err))
+          console.log("log 2", ret)
     </script>
   </body>
 </html>
